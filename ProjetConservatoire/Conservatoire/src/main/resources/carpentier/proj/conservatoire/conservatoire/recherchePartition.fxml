@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carpentier.proj.conservatoire.conservatoire.RecherchePartitionController">
+    <fx:include source="menu.fxml" />
+   <ListView fx:id="listePart" layoutX="235.0" layoutY="40.0" prefHeight="200.0" prefWidth="365.0" />
+   <Label layoutX="332.0" text="Mes partitions">
+      <font>
+         <Font size="27.0" />
+      </font>
+   </Label>
+   <Label layoutX="235.0" layoutY="256.0" text="Rentrez un auteur" />
+   <TextField fx:id="rentrezAut" layoutX="343.0" layoutY="252.0" onKeyTyped="#recherche" />
+   <Label fx:id="lblNom2" layoutX="48.0" layoutY="110.0" />
+   <Label fx:id="lblPrenom2" layoutX="130.0" layoutY="110.0" />
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carpentier.proj.conservatoire.conservatoire.MenuController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@télécharger.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="horaire" layoutX="42.0" layoutY="183.0" text="Horaires : 10h - 18h" />
+      <Label fx:id="saisie_partition" layoutX="56.0" layoutY="239.0" onMouseClicked="#verifSaisie" text="Saisie Partition" textFill="#1100ff" underline="true" />
+      <Label fx:id="recherche_partition" layoutX="43.0" layoutY="313.0" onMouseClicked="#verifRecherche" text="Recherche Partition" textFill="#0d00ff" underline="true" />
+      <Label fx:id="errorLabel" layoutX="73.0" layoutY="339.0" />
+      <Label fx:id="lblNom" layoutX="29.0" layoutY="102.0" />
+      <Label fx:id="lblPrenom" layoutX="132.0" layoutY="102.0" />
+   </children>
+</AnchorPane>
